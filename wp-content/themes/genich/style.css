@@ -1,0 +1,459 @@
+/*   
+Theme Name: Genich
+Theme URI: Template
+Description: Геническ Инфо
+Author: KoyotoStudio
+Author URI: Template
+
+Version: 1.0.0
+.
+Развёрнутое описание темы/Лицензия-если-нужно.
+.
+*/
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css";
+@import "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=cyrillic');
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css";
+
+@media screen and (min-width: 1440px) {
+  
+}
+
+@media screen and (max-width: 1280px) {
+  
+}
+
+@media screen and (max-width: 980px) {
+  .pc-show {
+    display: none !important;
+  }
+
+  .mobile-show {
+    display: block !important;
+  }
+  .welcome-text-title {
+    font-size: 4vw !important;
+  }
+
+  .welcome-text-description {
+    font-size: 2vw !important;
+  }
+
+  .first-header .logo li {
+    line-height: 64px !important;
+  }
+  .first-header {
+    background: #2f2f2f !important;
+    height: 64px !important;
+    margin-top: 20px !important;
+  }
+}
+
+.margin50 {
+  margin: 50px 0px;
+}
+.padding-none {
+  padding: 0px;
+}
+
+.block-center {
+  display: block;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-block-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.border-right-none {
+  border-right: none !important;
+}
+
+.pc-show {
+  display: block;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.modal {
+  background-color: transparent !important;
+  max-height: 100% !important;
+  width: auto !important;
+}
+
+/* Tooltips */
+.dropdown-button {
+  cursor: pointer;
+}
+.dropdown-content li, .dropdown-content li>span {
+  font-size: 1vw !important;
+  color: #777 !important;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+html {
+  margin-top: 0px !important;
+}
+
+body {
+  background-color: #f2f2f2; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  opacity:0;
+  transition:.5s;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav ul a {
+  padding: 0px !important;
+}
+
+/* Шапка */
+
+.welcome-block {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 65%;
+  position: relative;
+  background-size: cover;
+  min-height: 65%;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+}
+
+.navbar-default {
+  width: 100%;
+  float: left;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  box-shadow: none;
+}
+
+.first-header {
+  height: 130px; 
+  line-height: inherit;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.first-header li {
+  float: left;
+  list-style-type: none;
+}
+
+.first-header li a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.first-header .header-menu li {
+  padding-left: 30px;
+}
+
+.first-header .logo li {
+  padding: 15px;
+}
+
+.first-header .logo span {
+  color: #ec5237;
+  font-weight: 900;
+}
+
+.header-button {
+  background-color: #ec5237;
+  padding: 15px;
+}
+
+/* Основной центральный блок */
+
+#page-header {
+  color: #FFF;
+  background-color: #333;
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  margin: 0 0 24px 0;
+  padding: 0 30px;
+}
+
+.page-title {
+  position: relative;
+  padding: 24px 0;
+}
+
+.page-title h1 {
+  color: #FFF;
+  margin: 0;
+  font-size: 1.875em;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.page-title h1 em {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+#page-header:after {
+  border-top-color: #333;
+  border-top-color: rgba(0,0,0,0.8);
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0,0,0,0.8);
+}
+
+/* MENU */
+
+.menu {
+  padding: 7px 20px !important;
+  background-color: #ec5237;
+  border-color: rgba(0,0,0,0.1);
+}
+
+.menu ul {
+  margin: 0;
+  background-color: rgba(238, 238, 238, 0.25) !important;
+}
+
+.menu li {
+  margin: 0;
+  line-height: 1.2em;
+  border-color: rgba(255,255,255,0.1);
+  border-top: 1px solid transparent;
+}
+
+.menu a {
+  font-size: 14px;
+  color: #FFF;
+  padding: 7px 0;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* DROPDOWN MENU */
+
+.menu .dropdown-menu li {
+  margin-left: 0px !important;
+  padding: 5px 15px !important;
+  width: 100%;
+}
+
+.menu li:hover .dropdown-menu {
+  display: block;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+  display:block;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  min-width: 280px !important;
+  top: 100% !important;
+  left: 100% !important;
+  margin: -25px !important;
+  padding: 0px !important;
+}
+
+.dropdown-menu a {
+  color: #777;
+}
+
+/* Main блок */
+
+.mainblock {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+.mainblock a {
+  color: #ec5237;
+}
+
+.mainblock .post img {
+  width: 100%;
+}
+
+.mainblock-title {
+  margin-bottom: 10px;
+}
+.mainblock-title span {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+.mainblock-mainpost img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.mainblock-mainpost-title {
+  font-size: 22px;
+}
+
+.mainblock-mainpost-time {
+  color: #848484;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.mainblock-mainpost-content {
+  margin-top: 25px;
+  color: #565656 !important;
+}
+
+.list-posts {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.mainblock-post {
+  font-size: 14px;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #f0f0f0;
+    
+}
+.mainblock-post a {
+  font-size: 14px;
+}
+
+.mainblock-post-title {
+  margin: 0;
+  padding-right: 115px;
+}
+.mainblock-post-date {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  margin: 0;
+}
+
+.list-categories {
+  margin-top: 25px;
+}
+.list-categories a {
+  font-size: 14px;
+  color: #848484;
+}
+.list-categories ul {
+  -webkit-column-count: 3;
+  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  /* column-fill: balance; */
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+/* Правый сайдбар */
+
+.sidebar {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+.sidebar li {
+  padding: 5px 0px;
+}
+
+.sidebar a {
+  color: #ec5237;
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.sidebar-title {
+  margin-bottom: 10px;
+}
+.sidebar-title span {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+/* Левый сайдбар */
+
+.video-day img {
+  width: 100%;
+}
+
+.video-day p {
+  margin-top: 10px;
+}
+
+
+/* Пагинация */
+
+.pagination .nav-links {
+  text-align: center;
+}
+
+.pagination .nav-links a {
+  color: black;
+}
+
+.pagination .page-numbers {
+  padding: 0px 10px;
+}
